@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Пример веб-страницы</title>
+        <style>
+            body{margin: 0;
+                background-image: url("PicsArt_08-11-08.53.20.jpg"); 
+                width: 100%; height: 100%;}
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:15px;
+            }
+            nav a:hover{ color: darkmagenta; }
+            .logo_block{
+                margin-left: 50px;
+                color:#ffe1ff;
+            }
+            .menu{ display:flex; }
+            .main_menu{
+                margin-right: 35px;
+                font-size: 20px;
+            }
+            .main_menu a{
+              margin: 15px;
+                font-size: 20px;
+                color:#ffe1ff;
+                text-decoration: none;
+            }
+            .search{
+                display: inline-block;
+            }
+            .container{ 
+                display: flex;
+	           flex-direction: column;
+	           min-height: 100%;
+            }
+            .main_section{
+               margin: 0 auto;
+               width: 70%; 
+              flex: 1 0 auto;
+                background-color: rgba(0,0,0,0.2);
+            }
+            .main_headings{
+                margin: 0 auto;
+                width: 94%;
+                  background-color: #ffe1ff;
+                text-align: center;
+                font-size: 30px;
+                padding: 10px;
+                margin-top: 20px;
+                border: 1px solid black;
+            }
+            .items{ margin-top: 30px; margin-bottom: 30px;
+                display: flex;
+                 flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .item{
+                display: flex;
+                flex-wrap: wrap;
+                width: 210px;
+                height: 240px;
+                position: relative;
+                margin: 20px;
+            }
+            .item img{width: 200px;
+                height: 200px; border: 1px solid black;
+                background-color: #ffe1ff; padding: 4px; }
+            .title{  
+                font-size: 24px;
+                text-decoration: none; 
+                color: #ffe1ff; width: 100%; 
+                text-align: center;
+                align-items: center;
+            }
+            .item a: hover{color: white;}
+            footer{
+                background-color: darkmagenta;
+                
+                text-align: center;
+                width: 100%;
+                flex: 0 0 auto;
+            }
+            footer p{
+                
+                color: white;
+                text-decoration: none;
+            }
+
+            
+            @media only screen and (max-width: 740px){
+                .logo_block{ margin: 0; }
+                nav{ padding: 10px; display: block; }
+                .search{
+                align-items: center;
+                    width: 100%;
+                    text-align: center;
+            }
+                 
+               .main_menu{ 
+                   margin-right: 0;display: flex;
+                font-size: 8px; flex-wrap: wrap; justify-content: space-between;
+            }
+                .main_menu a{ 
+                color:#ffe1ff;
+                text-decoration: none; margin: 0;
+             }
+                .menu{display: inline-block;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+                .main_headings{
+                font-size: 25px;
+                padding: 7px;
+            }
+            .main_section{width: 100%;}
+                .items{ margin-left: 10px; margin-right: 10px; }
+            .item{ width: 108px; height: 144px; margin: 0px; }
+                .item img{ width: 100px; height: 100px; }
+                img.basket{width: 15px; height: 15px; }
+                .title{ font-size: 15px;}
+            }
+            
+        </style>
+    </head>
+    <body><div class="container">
+        <header>
+            <nav>
+                <div class="logo_block" ><img/ src="Снимок экрана 2020-10-20 163559.png" width="100px"></div>
+                <div class="menu"> 
+                    <div class="main_menu">
+                        <a href="#">Contacts</a>
+                        <a href="#">About us</a>
+                        <a href="#">Comitee</a>
+                        </div>
+                    <div class="search">
+                        <input type="text"/>
+                        <button><img src="https://img.favpng.com/3/11/18/computer-icons-search-box-desktop-wallpaper-png-favpng-dYyK4e06zzaa2kaBbwaCvVsvw.jpg" width="14px"></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="main_section">
+            <div class="main_headings">Main headings</div>
+            <div class="items">
+                <div class="item">
+                    <img src="https://img.icons8.com/ios/452/services.png" />
+                    <a href="#" class="title">Services</a>
+                </div>
+                <div class="item">
+                    <img src="https://static.thenounproject.com/png/1180247-200.png" />
+                    <a href="#" class="title">Electronics</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://icon-library.com/images/crafts-icon/crafts-icon-27.jpg" />
+                    <a href="#" class="title">Art & Crafts</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://cdn4.iconfinder.com/data/icons/dresses-outline-v2/640/dress-fashion-style-woman-beauty-dresses-5-512.png" />
+                    <a href="#" class="title">Fasion and style</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://cdn2.iconfinder.com/data/icons/beauty-salon-2/66/41-512.png" />
+                    <a href="#" class="title">Beauty and care</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://cdn.onlinewebfonts.com/svg/img_22550.png" />
+                    <a href="#" class="title">Sports and Outdoors</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://image.flaticon.com/icons/png/512/86/86259.png" />
+                    <a href="#" class="title">Pets</a>
+                </div>
+                <div class="item"> 
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/luggage-icon-png-8.png" />
+                    <a href="#" class="title">Luggage</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Author: Aziza Karzhaubayeva<br>
+  <a href="mailto:190103166@stu.sdu.edu.kz">190103166@stu.sdu.edu.kz</a></p>
+        </footer></div>
+    </body>
+</html>
