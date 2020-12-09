@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>example app</title>
+        <style>
+            body{margin: 0px;}
+            header{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+                background-color: #fcefdc;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:19px;
+            }
+            .logo_block{
+                margin-left: 50px;
+                font-size:25px;
+            } 
+            .logo_block a{text-decoration: none;}
+            .menu{ display:flex; }
+            .main_menu{margin-right: 35px;}
+            nav a{color:black}
+            .main_menu a{
+                margin: 15px;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            .container{
+                width: 100%;
+                position: relative;
+            }
+            .main_section{
+                position: absolute;
+                top:120px;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+            .m{display: flex;justify-content: space-between}
+            .holder{width: 50%;}
+            .text{
+                width: 100%;
+                text-align: center;
+            }
+            h1{font-size: 45px;}
+            .text2{color: dimgrey; font-size: 20px;}
+            .insta{
+                width: 180px;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+            }
+            .whatsApp{
+                width: 150px;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header id="header">
+                <nav>
+                    <div class="logo_block" >
+                        <a href="layout.html">Ӧrnek</a>
+                    </div>
+                    <div class="menu"> 
+                        <div class="main_menu">
+                            <a href="#">Сatalog</a>
+                            <a href="#">Contacts</a>
+                            <a href="#">About us</a> 
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="main_section">
+                <div class="holder">
+                    <div class="text">
+                        <h1>Contacs</h1>
+                        <p class="text2">Bizben baılanysa alasyzdar</p>
+                    </div><br/>
+                    <div class="m">
+                        <div class="insta">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="50px" height="50px"/>
+                            <h2>Instagram Direct</h2>
+                            <p>@gazizaaz, @gaziza_ornek, @gaziza_ornek_2</p>
+                        </div>
+                        <div class="whatsApp">
+                            <img src="https://w7.pngwing.com/pngs/961/507/png-transparent-iphone-whatsapp-computer-icons-text-messaging-viber-electronics-text-trademark.png" width="50px" height="50px"/>
+                            <h2>WhatsApp</h2>
+                            <p>+7 777 777 7777</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
