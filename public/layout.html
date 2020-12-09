@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Пример веб-страницы</title>
+    <style>
+        body{
+            margin:0px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container{ 
+             flex: 1 0 auto;
+        }
+        #header{  
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 0.4s;
+            z-index: 1;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:19px;
+        }
+        #na{color: white;}
+        .logo_block{
+            margin-left: 50px;
+            font-size:25px;
+        } 
+        .logo_block a{text-decoration: none;}
+        .menu{ display:flex; }
+        .main_menu{margin-right: 35px;}
+        .main_menu .la{
+            color: white;
+            margin: 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .catalog{
+            display: inline-block;
+            cursor: pointer;
+            margin: 15px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fcefdc;
+            min-width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin: 0;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 19px;
+        }
+        .dropdown-content a:hover {background-color: #fceacf;}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .mySlides{display:none}
+        .slider {
+            position: relative;
+            margin: auto;
+        }
+        .image{
+            width:100%; 
+            height:753px;
+            background-size: cover;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 48%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.3);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 20px;
+            position: absolute;
+            top:50%;
+            width: 100%;
+            text-align: center;
+        }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .6} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .6} 
+            to {opacity: 1}
+        }
+        .main_section{
+            display: flex;
+           justify-content: center;
+           flex: 1 0 auto;
+        }
+        .items{ 
+            width: 65%; 
+            margin:100px 0px 100px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            width: 410px;
+            height: 410px;
+            position: relative;
+            margin: 20px;
+            margin-bottom: 45px;
+            border: 1px solid black;
+        }
+        .item img{
+            width: 400px;
+            height: 400px; 
+            transition: transform .5s;
+            padding: 5px; 
+        }
+        .title{  
+            position: absolute;
+            top:50%;
+            font-size: 24px;
+            text-decoration: none; 
+            width: 100%; 
+            text-align: center;
+            color:white;
+            cursor: pointer;
+            transition: opacity 1s;
+        }
+        .item:hover img{
+            transform: scale(1.03);
+            transition-delay:.4s;
+        }
+        .item:hover .title{
+            transition-delay:.4s;
+            opacity: 0.8;
+        }
+        footer{
+            background-color: #fceacf;
+            text-align: center;
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        footer p{
+            margin: 15px;
+        }
+        footer a{
+            color: black;
+            text-decoration: none;
+            margin: 15px;
+        }
+        footer img{
+            margin-bottom:-5px;
+        }
+    </style>
+</head>
+    <body>
+    <div class="container">
+        <header id="header">
+            <nav>
+                <div class="logo_block" ><a id="na" href="layout.html">Ӧrnek</a></div>
+                <div class="menu"> 
+                    <div class="main_menu">
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="catalog">Catalog</a>
+                            <div class="dropdown-content">
+                                <a href="/headwears.html">Baskıіm</a>
+                                <a href="/dresses.html">Kóılek</a>
+                                <a href="/shapan.html">Shapan</a>
+                                <a href="/pants.html">Shalbar</a>
+                                <a href="/belts.html">Belbeý</a>
+                                <a href="/jewelery.html">Áshekeı</a>
+                            </div>
+                        </div>
+                        <a class="la" href="contacts.html">Contacts</a>
+                        <a class="la" href="#">About us</a>
+                        <a class="la" href="login.html">Log in</a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <div class="slider">
+            <div class="mySlides fade">
+                <img class="image" src="PicsArt_11-13-10.09.42.jpg" style="width:100%;height:735px">
+                <div class="text" >Sáýkele</div>
+            </div>
+            <div class="mySlides fade">
+                <img class="image" src="InShot_20201210_012929984.jpg" style="width:100%;height:735px">
+                <div class="text" >Dýlyǵa</div>
+            </div>
+            <div class="mySlides fade">
+                <img class="image"src="InShot_20201210_014804163.jpg" style="width:100%;height:735px">
+                <div class="text" >Topylar</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br/>
+        <section class="main_section">
+            <div class="items">
+                <div class="item"> 
+                    <a href="/headwears.html" >
+                        <img src="20201114_022707.jpg" />
+                    </a>
+                    <a href="/headwears.html" class="title">Baskıіm</a>
+                </div>
+                <div class="item"> 
+                    <a href="/dresses.html">
+                        <img src="20201124_191329.jpg" />
+                    </a> 
+                    <a href="/dresses.html" class="title">Kóılek</a>
+                </div>
+                <div class="item"> 
+                    <a href="/shapan.html">
+                        <img src="20201124_193035.jpg" />
+                    </a>
+                    <a href="/shapan.html" class="title">Shapan</a>
+                </div>
+                <div class="item">
+                    <a href="/pants.html"> 
+                        <img src="20201124_193459.jpg" />
+                    </a>
+                    <a href="/pants.html" class="title">Shalbar</a>
+                </div>
+                <div class="item"> 
+                    <a href="/belts.html">
+                        <img src="20201124_191250.jpg" /> 
+                    </a>
+                    <a href="/belts.html" class="title">Belbeý</a>
+                </div>
+                <div class="item">
+                    <a href="/jewelery.html"> 
+                        <img src="20201124_194418.jpg" />
+                    </a>
+                    <a href="/jewelery.html" class="title">Áshekeı</a>
+                </div>
+            </div>
+        </section>
+    </div>
+        <footer>
+            <p>Author: GAZIZA <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="20px"/> Insta: @gazizaaz, @gaziza_ornek, @gaziza_ornek_2</p>
+            <p>Site created by: Aziza Karzhaubayeva</p>
+            <a href="mailto:190103166@stu.sdu.edu.kz">190103166@stu.sdu.edu.kz</a>
+        </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+            slides[slideIndex-1].style.display = "block";  
+        }
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.querySelector('#header').style.background = "#fcefdc";
+    document.querySelector('#header').style.height = "60px";
+    document.querySelector('#na').style.color = "black";
+    document.querySelector('nav').style.padding = "4px";
+      var x= document.querySelectorAll(".main_menu a");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = "black";
+        }
+    } 
+    else {
+        document.querySelector('#header').style.background = "none";
+        document.querySelector('#header').style.height = "90.4px";
+        document.querySelector('#na').style.color = "white";
+        document.querySelector('nav').style.padding = "19px";
+        document.querySelector('.catalog').style.color="white";
+        var x= document.querySelectorAll(".main_menu .la");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.color = "white";
+            }
+        }
+    }
+    </script>
+    </body>
+</html>
