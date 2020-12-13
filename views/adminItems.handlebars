@@ -1,0 +1,16 @@
+<div class="adminItemsContainer">
+    <div class="adminItemsInContainer">
+        {{#each result}}
+            <div class="adminItemCard">
+                <img src="{{this.image_url}}"/><br/>
+                <div class="itemInfo">
+                    <p class="classItem" style="font-size:20px;">Class: {{this.class}}</p>
+                    <p class="nameItem">Name: {{this.name}}</p>
+                    <p class="priceItem">Price: {{this.price}} teńge</p>
+                    <p class="idItem" style="font-size:18px;">Id: {{this.id}}</p>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+    
