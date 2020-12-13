@@ -1,0 +1,119 @@
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:7px;
+            }
+            nav a{color: black;}
+            .logo_block{
+                margin-left: 50px;
+                font-size:25px;
+            } 
+            .logo_block a{text-decoration: none;}
+            .menu{ display:flex; }
+            .main_menu{margin-right: 35px;}
+            .main_menu .ma{
+                color: black;
+                margin: 15px;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            .catalog{
+                display: inline-block;
+                cursor: pointer;
+                margin: 15px;
+                color: black;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            .dropdown {
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #fcefdc;
+                min-width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                margin: 0;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 19px;
+            }
+            .dropdown-content a:hover {background-color: #fceacf;}
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .main_section{
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                top: 66px;
+                width: auto;
+                justify-content: center;
+                flex: 1 0 auto;
+                margin-bottom: 100px;
+            }
+            .slide{
+                display: flex;
+                text-align: center;
+                position: relative;
+                height: 590px;
+                width: 100%;
+                background: url(/InShot_20201208_014421046.jpg)100% 100% no-repeat;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .sl_text{
+                position: absolute;
+                top: 40%;
+                left: 37%;
+                font-size: 40px;
+                color: white;
+                font-family: 'Roboto Condensed', sans-serif;
+                text-transform: uppercase;
+            }
+            .itemsInfo{
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 30px;
+                margin-top: 80px;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            .itemsInfo .p1{
+                width: 65%;
+                margin: auto;
+                text-align: center;
+                color: black;
+                margin-bottom: 20px;
+                
+            }
+            .itemsInfo .p2{
+                width: 65%;
+                margin: auto;
+                text-align: center;
+                color: #A4A4A4;
+            }
+            .items{
+                width: 80%;
+                justify-content: space-around;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 50px;
+            }
+            .item img{
+                width: 350px;
+            }
+            .item{
+                margin-bottom: 30px;
+            }
+            footer{
+                margin-top: 50px;
+                padding-top: 1px;
+            }
