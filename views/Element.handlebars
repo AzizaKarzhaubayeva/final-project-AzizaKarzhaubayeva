@@ -1,0 +1,62 @@
+<body>
+    <div class="container">        
+        <header class="header_lists">
+            <nav class="nav2">
+                <div class="logo_block" >
+                    <a href="/">Ӧrnek</a>
+                </div>
+                    <div class="menu"> 
+                        <div class="main_menu">
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="catalog_element">Catalog</a>
+                                <div class="dropdown-content">
+                                    <a href="/list/headwears">Baskıіm</a>
+                                    <a href="/list/dresses">Kóılek</a>
+                                    <a href="/list/shapan">Shapan</a>
+                                    <a href="/list/pants">Shalbar</a>
+                                    <a href="/list/belts">Belbeý</a>
+                                    <a href="/list/jewelery">Áshekeı</a>
+                                </div>
+                            </div>
+                            <a href="contacts.html" class="fa">Contacts</a>
+                            <a href="#" class="fa">About us</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        <div class="element_container">
+            <div class="main_section_element">
+                    <div class="elm_img_holder">
+                        <img src="/{{element.image_url}}"/>
+                    </div>
+                        <div class="el_info_holder">
+                            <div class="in_el_info_holder">
+                                <div class="elem_name">{{element.name}}</div><br/>
+                                <div class="elem_price">{{element.price}} teńge</div>
+                                <form action="/fav/:?id={{element.id}}" method="post" >
+                                    <input type="submit" name="favBtn" value="Add to favs" id="button_fav">
+<!--                                        <img style="width:20px" src="https://cdn2.iconfinder.com/data/icons/circular-icons-line/82/Circular_Heart-512.png"/>-->
+                                </form>
+                                <button class="add_to_btn">Add to basket</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <footer style="padding-top:1px;">
+            <p>Author: GAZIZA <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="20px"/> Insta: @gazizaaz, @gaziza_ornek, @gaziza_ornek_2</p>
+            <p>Site created by: Aziza Karzhaubayeva</p>
+            <a href="mailto:190103166@stu.sdu.edu.kz">190103166@stu.sdu.edu.kz</a>
+        </footer>
+    </div>
+</body>
+
+<!--
+<script>
+    const button_fav = document.querySelector('#button_fav');
+    button_fav.addEventListener('click',e=>{
+        if (button_fav.value=="Add to favs")
+            button_fav.value = "Added to favs";
+        else
+            button_fav.value = "Add to favs";
+    });
+</script>-->

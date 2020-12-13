@@ -1,0 +1,54 @@
+    <div class="container">
+        <header class="header_lists">
+                <nav>
+                    <div class="logo_block" >
+                        <a href="/">Ӧrnek</a>
+                    </div>
+                    <div class="menu"> 
+                        <div class="main_menu">
+                            <div class="dropdown">
+                            <a href="javascript:void(0)" class="catalog">Catalog</a>
+                            <div class="dropdown-content">
+                                <a href="/list/headwears">Baskıіm</a>
+                                <a href="/list/dresses">Kóılek</a>
+                                <a href="/list/shapan">Shapan</a>
+                                <a href="/list/pants">Shalbar</a>
+                                <a href="/list/belts">Belbeý</a>
+                                <a href="/list/jewelery">Áshekeı</a>
+                            </div>
+                        </div>
+                        <a href="contacts.html" class="ma">Contacts</a>
+                        <a href="#" class="ma">About us</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="main_section">
+                <div class="slide" style="background-image: url('PicsArt_12-07-08.45.12.jpg')100% 100% no-repeat;">
+                    <p class="sl_text">Ulttyq baskıimder</p>
+                </div><br/>
+<!--                <hr aligh="center" width="50px" color="orange" size="3"/><br/>-->
+                <div class="itemsInfo">
+                    <p class="p1">Ulttyq baskıimderimizdiń santúrliligi tańqaldyrady.</p>
+                    <p class="p2"> Degenmen, osy kúnge deıin saqtalǵan túrleri saýsaq sanarlyq. Bizdiń sheberhanamyzda baskıimderimizdiń murajaılarda saqtalǵan túrleriniń kóshirmelerin kóre alasyzdar. Baskıim quıma ádisimen jasalyp, tabıǵı tastarmen bezendirilgen.</p>
+                </div>
+                <div class="items">
+                    {{#each result}}
+                        <div class="item">
+                            <a href="/list/{{this.class}}/:?id={{this.id}}" >
+                                <img src="{{this.image_url}}"/>
+                            </a>
+                            <div class="itemInfo">
+                                <a class="itemName" href="/list/{{this.class}}/:?id={{this.id}}">{{this.name}}</a>
+                                <p class="price">{{this.price}} teńge</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+            <footer>
+                <p>Author: GAZIZA <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="20px"/> Insta: @gazizaaz, @gaziza_ornek, @gaziza_ornek_2</p>
+                <p>Site created by: Aziza Karzhaubayeva</p>
+                <a href="mailto:190103166@stu.sdu.edu.kz">190103166@stu.sdu.edu.kz</a>
+            </footer>
+        </div>
