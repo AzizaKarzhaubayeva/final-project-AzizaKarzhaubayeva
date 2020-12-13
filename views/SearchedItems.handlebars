@@ -1,0 +1,41 @@
+<div class="container">
+    <header class="header_lists">
+        <nav class="nav2">
+                <div class="logo_block" >
+                    <a href="/">Ӧrnek</a>
+                </div>
+                    <div class="menu"> 
+                        <div class="main_menu">
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="catalog_element">Catalog</a>
+                                <div class="dropdown-content">
+                                    <a href="/list/headwears">Baskıіm</a>
+                                    <a href="/list/dresses">Kóılek</a>
+                                    <a href="/list/shapan">Shapan</a>
+                                    <a href="/list/pants">Shalbar</a>
+                                    <a href="/list/belts">Belbeý</a>
+                                    <a href="/list/jewelery">Áshekeı</a>
+                                </div>
+                            </div>
+                            <a href="contacts.html" class="fa">Contacts</a>
+                            <a href="#" class="fa">About us</a>
+                        </div>
+                    </div>
+                </nav>
+    </header>
+    <div class="searched_elements_container">
+        <div class="searched_items">
+            {{#each result}}
+                <div class="searched_item">
+                    <a href="/list/{{this.class}}/:?id={{this.id}}" >
+                        <img src="{{this.image_url}}"/>
+                    </a>
+                    <div class="itemInfo">
+                        <a class="itemName" href="/list/{{this.class}}/:?id={{this.id}}">{{this.name}}</a>
+                        <p class="price">{{this.price}} teńge</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
